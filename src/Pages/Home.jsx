@@ -1,9 +1,10 @@
 import React from 'react'
+import Hero from '../Components/Home/Banner/Hero'
 
 export default function Home() {
   return (
     <div>
-      <h1>This Home PageS</h1>
+      <Hero/>
     </div>
   )
 }
