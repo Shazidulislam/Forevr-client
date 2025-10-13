@@ -10,6 +10,7 @@ import Orders from "../Pages/Orders";
 import Product from "../Pages/Product";
 import PlaceOrders from "../Pages/PlaceOrders";
 import Login from "../Pages/Login";
+import ProductDitals from "../Pages/ProductDitals/ProductDitals";
 
 export const router = createBrowserRouter([
 
@@ -47,6 +48,7 @@ export const router = createBrowserRouter([
                 path:"product",
                 element:<Product/>
             },
+           
             {
                 path:"placeOrder",
                 element:<PlaceOrders/>
@@ -54,7 +56,11 @@ export const router = createBrowserRouter([
             {
                 path:"login",
                 element:<Login/>
-            }
+            }, 
+            {
+               path:"product/:id",
+               element:<ProductDitals/>
+            },
         ]
     }
 ])

@@ -8,8 +8,9 @@ const Navbar = () => {
   const [visible, setVisible] = useState(false);
   return (
     <div className="flex justify-between items-center py-6 px-4 sm:px-12 font-medium">
-      <img className="w-36" src={assets?.logo} alt="forever-logo" />
-
+      <Link to={"/"}>
+        <img className="w-36" src={assets?.logo} alt="forever-logo" />
+      </Link>
       {/*  */}
       <ul className="hidden sm:flex gap-5 tsxt-sm text-gray-700 font-medium">
         <li>
@@ -81,15 +82,52 @@ const Navbar = () => {
         }`}
       >
         <div className="flex flex-col text-gray-600">
-          <div onClick={()=>setVisible(false)} className="flex items-center p-3 gap-2 ">
+          <div
+            onClick={() => setVisible(false)}
+            className="flex items-center p-3 gap-2 "
+          >
             {/* <img src={assets?.} className="w-2" alt="" /> */}
-            <BsArrowBarLeft className="font-bold"/> 
+            <BsArrowBarLeft className="font-bold" />
             <p>Back</p>
           </div>
-          <Link className="pl-6 py-3 border-t shadow "  onClick={()=>setVisible(false)} to={"/"}>HOME</Link>
-          <Link className="pl-6 py-3 border-t shadow "  onClick={()=>setVisible(false)} to={"/collection"}>Collection</Link>
-          <Link className="pl-6 py-3 border-t shadow "  onClick={()=>setVisible(false)} to={"/about"}>About</Link>
-          <Link className="pl-6 py-3 border-t shadow "  onClick={()=>setVisible(false)} to={"/contact"}>Contact</Link>
+
+
+<NavLink
+  to="/"
+  className={({ isActive }) =>
+    isActive ? "bg-black text-white pl-6 py-3 border-t shadow " : "pl-6 py-3 border-t shadow "
+  } onClick={() => setVisible(false)}
+>
+  Home
+</NavLink>
+<NavLink
+  to="/collection"
+  className={({ isActive }) =>
+    isActive ? "bg-black text-white pl-6 py-3 border-t shadow " : "pl-6 py-3 border-t shadow "
+  } onClick={() => setVisible(false)}
+>
+  Collection
+</NavLink>
+<NavLink
+  to="/about"
+  className={({ isActive }) =>
+    isActive ? "bg-black text-white pl-6 py-3 border-t shadow " : "pl-6 py-3 border-t shadow "
+  } onClick={() => setVisible(false)}
+>
+  About
+</NavLink>
+<NavLink
+  to="/contact"
+  className={({ isActive }) =>
+    isActive ? "bg-black text-white pl-6 py-3 border-t shadow " : "pl-6 py-3 border-t shadow "
+  } onClick={() => setVisible(false)}
+>
+  Contact
+</NavLink>
+
+         
+         
+          
         </div>
       </div>
     </div>
