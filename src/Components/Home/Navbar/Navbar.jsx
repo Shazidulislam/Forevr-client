@@ -7,16 +7,16 @@ import { BsArrowBarLeft } from "react-icons/bs";
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
   return (
-    <div className="flex justify-between items-center py-6 px-4 sm:px-12 font-medium">
+    <div className="flex justify-between items-center py-6 px-2 sm:px-10 font-medium">
       <Link to={"/"}>
         <img className="w-36" src={assets?.logo} alt="forever-logo" />
       </Link>
       {/*  */}
-      <ul className="hidden sm:flex gap-5 tsxt-sm text-gray-700 font-medium">
+      <ul className="hidden md:flex gap-5 tsxt-sm text-gray-700 font-medium">
         <li>
           <NavLink to="/">
             {({ isActive }) => (
-              <span className={isActive ? "underline" : ""}>Home</span>
+              <span className={isActive ? "underlin" : ""}>Home</span>
             )}
           </NavLink>
         </li>
@@ -91,43 +91,50 @@ const Navbar = () => {
             <p>Back</p>
           </div>
 
-
-<NavLink
-  to="/"
-  className={({ isActive }) =>
-    isActive ? "bg-black text-white pl-6 py-3 border-t shadow " : "pl-6 py-3 border-t shadow "
-  } onClick={() => setVisible(false)}
->
-  Home
-</NavLink>
-<NavLink
-  to="/collection"
-  className={({ isActive }) =>
-    isActive ? "bg-black text-white pl-6 py-3 border-t shadow " : "pl-6 py-3 border-t shadow "
-  } onClick={() => setVisible(false)}
->
-  Collection
-</NavLink>
-<NavLink
-  to="/about"
-  className={({ isActive }) =>
-    isActive ? "bg-black text-white pl-6 py-3 border-t shadow " : "pl-6 py-3 border-t shadow "
-  } onClick={() => setVisible(false)}
->
-  About
-</NavLink>
-<NavLink
-  to="/contact"
-  className={({ isActive }) =>
-    isActive ? "bg-black text-white pl-6 py-3 border-t shadow " : "pl-6 py-3 border-t shadow "
-  } onClick={() => setVisible(false)}
->
-  Contact
-</NavLink>
-
-         
-         
-          
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "bg-black text-white pl-6 py-3 border-t shadow "
+                : "pl-6 py-3 border-t shadow "
+            }
+            onClick={() => setVisible(false)}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/collection"
+            className={({ isActive }) =>
+              isActive
+                ? "bg-black text-white pl-6 py-3 border-t shadow "
+                : "pl-6 py-3 border-t shadow "
+            }
+            onClick={() => setVisible(false)}
+          >
+            Collection
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive
+                ? "bg-black text-white pl-6 py-3 border-t shadow "
+                : "pl-6 py-3 border-t shadow "
+            }
+            onClick={() => setVisible(false)}
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive
+                ? "bg-black text-white pl-6 py-3 border-t shadow "
+                : "pl-6 py-3 border-t shadow "
+            }
+            onClick={() => setVisible(false)}
+          >
+            Contact
+          </NavLink>
         </div>
       </div>
     </div>

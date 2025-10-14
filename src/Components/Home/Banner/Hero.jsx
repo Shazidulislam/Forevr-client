@@ -3,8 +3,8 @@ import { assets } from "../../../assets/frontend_assets/assets";
 
 const Hero = () => {
   return (
-    <div className="flex sm:flex-row flex-col  justify-center items-center border border-gray-400">
-      <div className="flex flex-col  items-center flex-1 w-full sm:w-1/2 py-10 sm:py-0">
+    <div className="flex flex-col md:flex-row   justify-center items-center border border-gray-400">
+      <div className="flex flex-col  items-center flex-1 w-full sm:w-1/2 py-10 sm:py-2">
        <div>
          <div className="flex gap-2 items-center justify-start ">
           <p className="w-8 md:w-11 h-[2px] bg-[#414141]"></p>

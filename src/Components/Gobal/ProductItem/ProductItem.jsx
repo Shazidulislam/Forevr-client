@@ -11,7 +11,7 @@ const ProductItem = ({ items }) => {
   } = items;
   
   return (
-    <Link className="text-gray-700 cursor-pointer px-1 sm:px-0" to={`/product/${_id}`}>
+    <Link className="text-gray-700 cursor-pointer px-1 sm:px-2" to={`/product/${_id}`}>
       <div className="">
         <div className="flex flex-col justify-between">
           <div className="flex-1">
@@ -24,8 +24,8 @@ const ProductItem = ({ items }) => {
           </div>
           {/* add to cart */}
           <div className=" flex text-xs gap-2 pl-1 flex-1">
-            <button className=" px-2 sm:px-3 py-1 border-2 rounded-full cursor-pointer">Add to Cart</button>
-            <button className="px-2 sm:px-3 py-1 border-2 rounded-full cursor-pointer">Chat Now</button>
+            <button className=" px-2 sm:px-3 py-1 border-2 text-sx sm:text-sm rounded-full cursor-pointer">Add to Cart</button>
+            <button className="px-2 sm:px-3 py-1 border-2  text-sx sm:text-sm  rounded-full cursor-pointer">Chat Now</button>
           </div>
         </div>
       </div>

@@ -8,7 +8,6 @@ const LatetestCollecton = () => {
   const [latestProduct, setLatestProduct] = useState(products);
   const [viweAll , setViweAll] = useState(false)
 
-  console.log(viweAll)
 
   useEffect(() => {
     if(viweAll===false){
@@ -41,7 +40,7 @@ const LatetestCollecton = () => {
       </div>
       <div className="">
         {
-            viweAll ? <button onClick={()=>setViweAll(true)} className="border px-1 sm:px-3 py-1 rounded-full cursor-pointer">View Less</button>:<button  onClick={()=>setViweAll(false)} className="border px-1 sm:px-3 py-1 rounded-full cursor-pointer">Viwe All</button>
+            viweAll ? <button onClick={()=>setViweAll(false)} className="border px-1 sm:px-3 py-1 rounded-full cursor-pointer">View Less</button>:<button  onClick={()=>setViweAll(true)} className="border px-1 sm:px-3 py-1 rounded-full cursor-pointer">Viwe All</button>
         }
       </div>
     </div>
