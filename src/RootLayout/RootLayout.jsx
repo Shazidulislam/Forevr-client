@@ -6,13 +6,13 @@ import Footer from '../Components/Home/Footer/Footer';
 const RootLayout = () => {
     return (
         <div>
-           <section>
+           <section className='px-2 sm:px-10 '>
             <Navbar/>
            </section>
-           <main className='sm:max-w-7xl mx-auto'>
+           <main className=' px-2 sm:max-w-7xl mx-auto'>
             <Outlet/>
            </main>
-           <section className='px-4 sm:px-12'>
+           <section className='px-2 sm:px-10'>
             <Footer/>
            </section>
         </div>

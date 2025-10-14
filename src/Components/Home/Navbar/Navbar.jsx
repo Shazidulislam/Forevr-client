@@ -7,7 +7,7 @@ import { BsArrowBarLeft } from "react-icons/bs";
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
   return (
-    <div className="flex justify-between items-center py-6 px-2 sm:px-10 font-medium">
+    <div className="flex justify-between items-center py-6 font-medium">
       <Link to={"/"}>
         <img className="w-36" src={assets?.logo} alt="forever-logo" />
       </Link>
