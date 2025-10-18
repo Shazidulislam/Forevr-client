@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="py-10">
       <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-12 text-sm">
         <div>
-          <img src={assets?.logo} className="" alt="" />
+          <img src={assets?.logo} className="w-36" alt="" />
           <p className="text-gray-800">
            Forever is your trusted fashion and lifestyle brand, dedicated to bringing comfort, style, and confidence into every aspect of your life. We focus on high-quality materials, innovative designs, and creative solutions that make you stand out. Our mission is to provide exceptional products while ensuring complete customer satisfaction, making every shopping experience enjoyable, seamless, and memorable. With Forever, you’re not just buying fashion — you’re joining a community that values style, authenticity, and happiness
           </p>
